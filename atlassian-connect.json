@@ -1,0 +1,36 @@
+{
+    "key": "teamlead-test",
+    "name": "Teamlead-test",
+    "description": "Teamlead TodoList Test",
+    "baseUrl": "{{localBaseUrl}}",
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/installed"
+    },
+    "scopes": ["READ"],
+    "apiMigrations": {
+        "signed-install": true
+    },
+    "modules": {
+        "generalPages": [
+            {
+                "key": "todolist-tasks",
+                "location": "none",
+                "name": {
+                    "value": "TodoList Tasks"
+                },
+                "url": "/todolist-tasks?projectKey={ac.projectKey}"
+            },
+            {
+                "key": "select-projects",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Teamlead TodoList"
+                },
+                "url": "/select-projects"
+            }
+        ]
+    }
+}
