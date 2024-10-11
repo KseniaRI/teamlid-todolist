@@ -2,7 +2,7 @@ import express from 'express';
 import { createRequire } from 'module';
 import path from 'path';
 import React from 'react';
-import ReactDomServer from 'react-dom/server';
+import ReactDomServer from 'react-dom/server.js';
 import { ServerStyleSheet } from 'styled-components';
 
 const nodeRequire =
